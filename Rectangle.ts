@@ -1,9 +1,9 @@
 import {Colorable} from "./Colorable";
 
 export class Rectangle {
-    width: number;
-    height: number;
-    color: boolean;
+    private readonly  width: number;
+    private readonly height: number;
+    private readonly color: boolean;
 
     constructor(width: number, height: number, color: boolean) {
         this.width = width;

@@ -1,8 +1,8 @@
 import {Colorable} from "./Colorable";
 
 export class Circle implements Colorable {
-    radius: number;
-    color: boolean;
+    private readonly radius: number;
+    private readonly color: boolean;
 
     constructor(radius: number, color: boolean) {
         this.radius = radius;

@@ -1,28 +1,12 @@
 import {Colorable} from "./Colorable";
 
 export class Square implements Colorable {
-    private _side: number;
-    private _color: boolean;
+    private readonly _side: number;
+    private readonly _color: boolean;
 
     constructor(side: number, color: boolean) {
         this._side = side;
         this._color = color;
-    }
-
-    getSide(): number {
-        return this._side;
-    }
-
-    setSide(value: number) {
-        this._side = value;
-    }
-
-    getColor(): boolean {
-        return this._color;
-    }
-
-    setColor(value: boolean) {
-        this._color = value;
     }
 
     howToColor(): string {
@@ -41,14 +25,3 @@ export class Square implements Colorable {
         }
     }
 }
-
-// let square1: Square = new Square(10, true);
-// let square2: Square = new Square(5, false);
-// let square3: Square = new Square(8, false);
-// let square4: Square = new Square(3, true);
-//
-// let arr: Square[] = [square1, square2, square3, square4]
-//
-// arr.forEach((i) => {
-//     console.log(i.showInfo())
-// })
