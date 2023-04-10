@@ -1,6 +1,6 @@
 import {Colorable} from "./Colorable";
 
-class Square implements Colorable {
+export class Square implements Colorable {
     private _side: number;
     private _color: boolean;
 
@@ -42,13 +42,13 @@ class Square implements Colorable {
     }
 }
 
-let square1: Square = new Square(10, true);
-let square2: Square = new Square(5, false);
-let square3: Square = new Square(8, false);
-let square4: Square = new Square(3, true);
-
-let arr: Square[] = [square1, square2, square3, square4]
-
-arr.forEach((i) => {
-    console.log(i.showInfo())
-})
+// let square1: Square = new Square(10, true);
+// let square2: Square = new Square(5, false);
+// let square3: Square = new Square(8, false);
+// let square4: Square = new Square(3, true);
+//
+// let arr: Square[] = [square1, square2, square3, square4]
+//
+// arr.forEach((i) => {
+//     console.log(i.showInfo())
+// })
